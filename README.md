@@ -1,97 +1,100 @@
+# School Management System
 
+## Overview
 
-School Management System
+The **School Management System** is a Laravel-based application designed to streamline the management of students, teachers, classes, timetables, and attendance. It incorporates role-based access control to ensure that users have appropriate permissions based on their roles.
 
-Overview
+---
 
-The School Management System is a Laravel-based application designed to streamline the management of students, teachers, classes, timetables, and attendance. It incorporates role-based access control to ensure that users have appropriate permissions based on their roles.
+## Database Setup
 
+1. Go to the `database` folder in the project.
+2. Locate the `school_management_system_task` file.
+3. Open MySQL in XAMPP and import this file into your database.
 
-Database Setup:
+---
 
-Go to the database folder in the project.
-Locate the school_management_system_task file.
-Open MySQL in XAMPP and import this file into your database.
+## Login Details
 
+### Admin:
+- **Email**: `admin123@gmail.com`
+- **Password**: `admin123`
 
-Login Details:
+### Teacher:
+- **Email**: `maazrehan@gmail.com`
+- **Password**: `12345678`
 
-Admin:
+---
 
-Email: admin123@gmail.com
-Password: admin123
+## Features
 
-Teacher:
+### 1. Role-Based Access Control
 
-Email: maazrehan@gmail.com
-Password: 12345678
+- **Admin**:
+  - Full access to all modules, including student, teacher, class, and timetable management.
 
+- **Teacher**:
+  - Access to their assigned class schedules and student lists.
+  - Ability to mark and view attendance.
 
-Features
+---
 
-1. Role-Based Access Control
+### 2. Modules
 
-Admin:
-Full access to all modules, including student, teacher, class, and timetable management.
+#### a. Student Management
+- Add, edit, delete, and view students.
+- Assign students to specific classes.
+- Manage student details like:
+  - Name, Roll Number, Class, Date of Birth, and Parent Contact.
 
-Teacher:
-Access to their assigned class schedules and student lists.
-Ability to mark and view attendance.
+#### b. Teacher Management
+- Add, edit, delete, and view teachers.
+- Assign teachers to specific classes.
+- Manage teacher details like:
+  - Name, Email, Subject Expertise, and Contact Number.
 
-2. Modules
+#### c. Class Management
+- Add, edit, delete, and view classes.
+- Assign a teacher and students to each class.
+- Track class details, including:
+  - Class Name, Assigned Teacher, and Student List.
 
-a. Student Management
-Add, edit, delete, and view students.
-Assign students to specific classes.
-Manage student details like:
-Name, Roll Number, Class, Date of Birth, and Parent Contact.
+#### d. Timetable Management
+- Create and manage timetables for each class.
+- Assign subjects, teachers, and time slots for classes.
 
-b. Teacher Management
-Add, edit, delete, and view teachers.
-Assign teachers to specific classes.
-Manage teacher details like:
-Name, Email, Subject Expertise, and Contact Number.
+#### e. Attendance System
+- Teachers can:
+  - Mark daily attendance for their students.
+  - View attendance history for the current month.
 
-c. Class Management
-Add, edit, delete, and view classes.
-Assign a teacher and students to each class.
-Track class details, including:
-Class Name, Assigned Teacher, and Student List.
+---
 
-d. Timetable Management
-Create and manage timetables for each class.
-Assign subjects, teachers, and time slots for classes.
+## Frontend Features
 
-e. Attendance System
-Teachers can:
-Mark daily attendance for their students.
-View attendance history for the current month.
+### Admin Dashboard:
+- Displays an overview of total students, teachers, and classes.
+- Provides quick links to manage modules.
 
+### Teacher Dashboard:
+- Lists assigned classes and schedules.
+- Includes attendance marking functionality.
 
-Frontend Features
+---
 
-Admin Dashboard:
+## Database Design
 
-Displays an overview of total students, teachers, and classes.
-Provides quick links to manage modules.
+The application uses **Eloquent Relationships** in Laravel for efficient data handling:
 
-Teacher Dashboard:
-Lists assigned classes and schedules.
-Includes attendance marking functionality.
+- **Users** (stores admin and teacher details).
+- **Students**.
+- **Classes**.
+- **Subjects**.
+- **Timetable**.
+- **Attendance**.
 
-
-Database Design
-
-The application uses Eloquent Relationships in Laravel for efficient data handling:
-
-Users (stores admin and teacher details).
-Students.
-Classes.
-Subjects.
-Timetable.
-Attendance.
-Key Relationships:
-One-to-Many:
-Class ↔ Students, Teacher ↔ Classes.
-Many-to-Many:
-Subjects ↔ Classes.
+### Key Relationships:
+- **One-to-Many**:
+  - Class ↔ Students, Teacher ↔ Classes.
+- **Many-to-Many**:
+  - Subjects ↔ Classes.
