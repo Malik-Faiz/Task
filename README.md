@@ -6,11 +6,13 @@ Overview
 
 The School Management System is a Laravel-based application designed to streamline the management of students, teachers, classes, timetables, and attendance. It incorporates role-based access control to ensure that users have appropriate permissions based on their roles.
 
+
 Database Setup:
 
 Go to the database folder in the project.
 Locate the school_management_system_task file.
 Open MySQL in XAMPP and import this file into your database.
+
 
 Login Details:
 
@@ -23,6 +25,7 @@ Teacher:
 
 Email: maazrehan@gmail.com
 Password: 12345678
+
 
 Features
 
@@ -64,6 +67,7 @@ Teachers can:
 Mark daily attendance for their students.
 View attendance history for the current month.
 
+
 Frontend Features
 
 Admin Dashboard:
@@ -74,6 +78,7 @@ Provides quick links to manage modules.
 Teacher Dashboard:
 Lists assigned classes and schedules.
 Includes attendance marking functionality.
+
 
 Database Design
 
