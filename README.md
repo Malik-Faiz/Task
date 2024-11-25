@@ -17,6 +17,7 @@ The **School Management System** is a Laravel-based application designed to stre
 1. Go to the `database` folder in the project.
 2. Locate the `school_management_system_task` file.
 3. Open MySQL in XAMPP and import this file into your database.
+4. then open this project in VS code and run command php artisan serve
 
 ---
 
