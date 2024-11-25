@@ -22,6 +22,9 @@ The **School Management System** is a Laravel-based application designed to stre
 
 ## Login Details
 
+### Login Page
+![Login Page](public/images/login.JPG)
+
 ### Admin:
 - **Email**: `admin123@gmail.com`
 - **Password**: `admin123`
@@ -39,10 +42,15 @@ The **School Management System** is a Laravel-based application designed to stre
 - **Admin**:
   - Full access to all modules, including student, teacher, class, and timetable management.
 
+    ### Admin Dashboard
+![Admin Dashboard](public/images/admindashboard.JPG)
+
 - **Teacher**:
   - Access to their assigned class schedules and student lists.
   - Ability to mark and view attendance.
-
+  - 
+### Teacher Dashboard
+![Teacher Dashboard](public/images/teacherdashboard.JPG)
 ---
 
 ### 2. Modules
