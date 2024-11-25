@@ -1,5 +1,9 @@
 # School Management System
 
+> **Note**: This project is not responsive. Simple HTML and CSS are used for the frontend.
+
+---
+
 ## Overview
 
 The **School Management System** is a Laravel-based application designed to streamline the management of students, teachers, classes, timetables, and attendance. It incorporates role-based access control to ensure that users have appropriate permissions based on their roles.
