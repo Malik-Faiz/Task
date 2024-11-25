@@ -7,42 +7,56 @@ The School Management System is a Laravel-based application designed to streamli
 Features
 
 1. Role-Based Access Control
+
 Admin:
 Full access to all modules, including student, teacher, class, and timetable management.
+
 Teacher:
 Access to their assigned class schedules and student lists.
 Ability to mark and view attendance.
+
 2. Modules
+
 a. Student Management
 Add, edit, delete, and view students.
 Assign students to specific classes.
 Manage student details like:
 Name, Roll Number, Class, Date of Birth, and Parent Contact.
+
 b. Teacher Management
 Add, edit, delete, and view teachers.
 Assign teachers to specific classes.
 Manage teacher details like:
 Name, Email, Subject Expertise, and Contact Number.
+
 c. Class Management
 Add, edit, delete, and view classes.
 Assign a teacher and students to each class.
 Track class details, including:
 Class Name, Assigned Teacher, and Student List.
+
 d. Timetable Management
 Create and manage timetables for each class.
 Assign subjects, teachers, and time slots for classes.
+
 e. Attendance System
 Teachers can:
 Mark daily attendance for their students.
 View attendance history for the current month.
+
 Frontend Features
+
 Admin Dashboard:
+
 Displays an overview of total students, teachers, and classes.
 Provides quick links to manage modules.
+
 Teacher Dashboard:
 Lists assigned classes and schedules.
 Includes attendance marking functionality.
+
 Database Design
+
 The application uses Eloquent Relationships in Laravel for efficient data handling:
 
 Users (stores admin and teacher details).
