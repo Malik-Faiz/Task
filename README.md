@@ -3,6 +3,8 @@
 > **Note**: This project is not responsive. Simple HTML and CSS are used for the frontend.
 
 ---
+### Home Page
+![Home Page](public/images/Home.JPG)
 
 ## Overview
 
